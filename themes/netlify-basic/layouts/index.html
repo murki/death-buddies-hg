@@ -1,31 +1,216 @@
-{{ define "main" }}
-<svg id="background" width='1728' height='1235' viewBox="0 0 1728 1235" fill='none' xmlns='http://www.w3.org/2000/svg'><g opacity='0.75' filter='url(#filter0_f_39_143)'><circle cy='1000' r='264' fill='url(#paint0_linear_39_143)'/></g><g opacity='0.65' filter='url(#filter1_f_39_143)'><circle cx='1720' cy='264' r='379' fill='url(#paint1_linear_39_143)'/></g><defs><filter id='filter0_f_39_143' x='-485' y='515' width='970' height='970' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/><feGaussianBlur stdDeviation='110.5' result='effect1_foregroundBlur_39_143'/></filter><filter id='filter1_f_39_143' x='1120' y='-336' width='1200' height='1200' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'><feFlood flood-opacity='0' result='BackgroundImageFix'/><feBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/><feGaussianBlur stdDeviation='110.5' result='effect1_foregroundBlur_39_143'/></filter><linearGradient id='paint0_linear_39_143' x1='196.5' y1='902' x2='-2.55853e-05' y2='1264' gradientUnits='userSpaceOnUse'><stop stop-color="var(--bttm-left-blur-1)"/><stop offset='1' stop-color="var(--bttm-left-blur-2)"/></linearGradient><linearGradient id='paint1_linear_39_143' x1='1720' y1='-115' x2='1720' y2='643' gradientUnits='userSpaceOnUse'><stop stop-color="var(--top-right-blur-1)"/><stop offset='1' stop-color="var(--top-right-blur-2)" /></linearGradient></defs></svg>     
-<div id="content">
-  <div class="header">
-    <h1>Quickstart Template</h1>
-    <div class="logo">
-      <img src="https://user-images.githubusercontent.com/43764894/223559747-e9d7f19d-91bf-46a9-a0cb-8d6a40d3cfa3.png" alt="netlify + hugo banner" role="presentation">
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800"
+    />
+
+    <title>Stitch Design</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#161122] dark group/design-root overflow-x-hidden"
+      style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'
+    >
+      <div class="layout-container flex h-full grow flex-col">
+        <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2f2447] px-10 py-3">
+          <div class="flex items-center gap-4 text-white">
+            <div class="size-4">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_6_319)">
+                  <path
+                    d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                    fill="currentColor"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_6_319"><rect width="48" height="48" fill="white"></rect></clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Death Buddies</h2>
+          </div>
+          <div class="flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-9">
+              <a class="text-white text-sm font-medium leading-normal" href="#">How it works</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">Pricing</a>
+              <a class="text-white text-sm font-medium leading-normal" href="#">FAQ</a>
+            </div>
+            <button
+              class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-[#7847ea] text-white text-sm font-bold leading-normal tracking-[0.015em]"
+            >
+              <span class="truncate">Get started</span>
+            </button>
+          </div>
+        </header>
+        <div class="px-40 flex flex-1 justify-center py-5">
+          <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="@[480px]:p-4">
+                <div
+                  class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-start justify-end px-4 pb-10 @[480px]:px-10"
+                  style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAUqwhX_Kc10ZZy0sK9x9qgP1A0N25yY1pTmZo1-070Q6jlO8nNOeOe8XtlPv7erjsP9bL2wp4CVmbp4tGD5ErYplwu9iDgKOETUv2va7f90hJFJvzMvWzd8nhiJw0oquHryVRH45iaJjiOjGn2UGALJX5osrLcINt_VZXnMcr7q2lJcU1xPAuVuuAnysm-P7fhcsf_Ha5PlhInVR_-NTA5qYD_NYpikl69Wg8QxfX1ByjG2U8vDf8t5mROZwrl7mIYyoUkZr4q9UI");'
+                >
+                  <div class="flex flex-col gap-2 text-left">
+                    <h1
+                      class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]"
+                    >
+                      Your secrets, safe and sound.
+                    </h1>
+                    <h2 class="text-white text-sm font-normal leading-normal @[480px]:text-base @[480px]:font-normal @[480px]:leading-normal">
+                      Death Buddies is a secure platform where you can store your most sensitive information, accessible only to your designated person after your passing. Gain
+                      peace of mind knowing your legacy is in trusted hands.
+                    </h2>
+                  </div>
+                  <button
+                    class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#7847ea] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em]"
+                  >
+                    <span class="truncate">Get started</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+                  How Death Buddies works
+                </h1>
+                <p class="text-white text-base font-normal leading-normal max-w-[720px]">
+                  Death Buddies ensures your secrets are protected and only accessible to your chosen person.
+                </p>
+              </div>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3">
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAxa8EaNPaOjRN4kfBsCCWZhH1Ysh4xh6xSQw11K_JgZNAIqMncby4x9NqNSaf7wQBwkEH6p3aCE0ZGQDLe7dGvYQmbtmzeDw3qLOXcI3CA3SfzRAorZbBeEoXyE5ttyCkgGupnf5qdMZa_seKX8Wiub3SxUwQSperbICWr1J3KMmX8eaSrD_kWL1mQbEVQB3JHJWvV0nAePhes0XWm9bwfOD1Z6prFNrzYI0OmmfXj0Zwh6HGHx2JP-BotXGdj254OfZcJg553izw");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Secure Storage</p>
+                    <p class="text-[#a393c8] text-sm font-normal leading-normal">Your secrets are encrypted and stored securely on our platform.</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC2pmUgFfsSuhzWgpo5ziUUfocvZ3220szInurQCBqi_hZRLl2BCpjQOdl6WXV9xSVUAD8OdmbubR2OyBphpC9QJnkU476TasauqgkKjjwW0QTRMEcO-RBHxdL2zU3Plm-XspCXbDPIseUPQDLaB1YGzgi1GOKFBGIHrWv3qdSzmli31XE92OAvapq4sK-sWWosxeZbQLIphEMFt0cHza5perSJB25lwGHbcjCial1L8DSECQ_9hbw8Nr6G-_5chph94H2uoYI_hAA");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Designated Access</p>
+                    <p class="text-[#a393c8] text-sm font-normal leading-normal">Only your designated person can access your secrets after your passing.</p>
+                  </div>
+                </div>
+                <div class="flex flex-col gap-3 pb-3">
+                  <div
+                    class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+                    style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBBKVlvICQwU9eLiOHtIPJsxT-9bCC-XWSVmQggGagXKLt_OBc7oyzA-NJ4AcpkxkCsudu7CRAeZ13F1AWQesWle0c1l-Isw8OLUAHUb4G9WkUeNsrYvFpGeAXUIZ6ASJBA__Gezx2wrhzLFFNF560cvNG5abIQN_lB_y8yGNViLWXhef0fQnPtI90bGi5JGiqBpnqqRcA67W8PqKsxtryuTSim0NBW_3wBGBjssbimCqmmZQ7tUf2z63nhJKbVRa-ZKJZO6ctmlh8");'
+                  ></div>
+                  <div>
+                    <p class="text-white text-base font-medium leading-normal">Peace of Mind</p>
+                    <p class="text-[#a393c8] text-sm font-normal leading-normal">Rest easy knowing your legacy is in trusted hands.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col gap-10 px-4 py-10 @container">
+              <div class="flex flex-col gap-4">
+                <h1
+                  class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                >
+                  Why choose Death Buddies?
+                </h1>
+                <p class="text-white text-base font-normal leading-normal max-w-[720px]">
+                  Death Buddies offers a unique solution for securing your sensitive information and ensuring it's only accessible to your chosen person.
+                </p>
+              </div>
+              <div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-0">
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#433465] bg-[#211a32] p-4 flex-col">
+                  <div class="text-white" data-icon="Shield" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M208,40H48A16,16,0,0,0,32,56v58.77c0,89.61,75.82,119.34,91,124.39a15.53,15.53,0,0,0,10,0c15.2-5.05,91-34.78,91-124.39V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.69-80-109.18V56l160,0Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-white text-base font-bold leading-tight">Unparalleled Security</h2>
+                    <p class="text-[#a393c8] text-sm font-normal leading-normal">We use state-of-the-art encryption to protect your secrets.</p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#433465] bg-[#211a32] p-4 flex-col">
+                  <div class="text-white" data-icon="User" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-white text-base font-bold leading-tight">User-Friendly</h2>
+                    <p class="text-[#a393c8] text-sm font-normal leading-normal">Our platform is easy to use, even for those less tech-savvy.</p>
+                  </div>
+                </div>
+                <div class="flex flex-1 gap-3 rounded-lg border border-[#433465] bg-[#211a32] p-4 flex-col">
+                  <div class="text-white" data-icon="Lock" data-size="24px" data-weight="regular">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                      <path
+                        d="M208,80H176V56a48,48,0,0,0-96,0V80H48A16,16,0,0,0,32,96V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V96A16,16,0,0,0,208,80ZM96,56a32,32,0,0,1,64,0V80H96ZM208,208H48V96H208V208Zm-68-56a12,12,0,1,1-12-12A12,12,0,0,1,140,152Z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div class="flex flex-col gap-1">
+                    <h2 class="text-white text-base font-bold leading-tight">Privacy Focused</h2>
+                    <p class="text-[#a393c8] text-sm font-normal leading-normal">Your privacy is our top priority. We never access or share your information.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="@container">
+              <div class="flex flex-col justify-end gap-6 px-4 py-10 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-20">
+                <div class="flex flex-col gap-2 text-center">
+                  <h1
+                    class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px]"
+                  >
+                    Ready to secure your legacy?
+                  </h1>
+                  <p class="text-white text-base font-normal leading-normal max-w-[720px">
+                    Join Death Buddies today and gain peace of mind knowing your secrets are safe and sound.
+                  </p>
+                </div>
+                <div class="flex flex-1 justify-center">
+                  <div class="flex justify-center">
+                    <button
+                      class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-[#7847ea] text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] grow"
+                    >
+                      <span class="truncate">Get started</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="flex justify-center">
+          <div class="flex max-w-[960px] flex-1 flex-col">
+            <footer class="flex flex-col gap-6 px-5 py-10 text-center @container">
+              <div class="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
+                <a class="text-[#a393c8] text-base font-normal leading-normal min-w-40" href="#">Terms of Service</a>
+                <a class="text-[#a393c8] text-base font-normal leading-normal min-w-40" href="#">Privacy Policy</a>
+                <a class="text-[#a393c8] text-base font-normal leading-normal min-w-40" href="#">Contact Us</a>
+              </div>
+              <p class="text-[#a393c8] text-base font-normal leading-normal">© 2025 Death Buddies. All rights reserved.</p>
+            </footer>
+          </div>
+        </footer>
+      </div>
     </div>
-    <h2>
-      This is a bare-bones Hugo project that has everything you need to quickly deploy it to Netlify
-    </h2>
-    <div class="bttns">
-      <a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/hugo-quickstart" class="bttn primary">Deploy to Netlify</a>
-      <a href="https://github.com/netlify-templates/hugo-quickstart" class="bttn secondary">View Repo</a>
-    </div>
-  </div>
-  <div class="resource-list">
-    <ul>
-      <li>
-        <a href="https://ntl.fyi/3xXydGk">Netlify Blog: Hugo posts</a>
-        </li>
-      <li>
-        <a href="https://ntl.fyi/3P9w1mr">Hugo on Netlify Docs</a>
-      </li>
-      <li>
-        <a href="https://gohugo.io/documentation/">Hugo Docs</a>
-      </li>
-    </ul>
-  </div>
-</div>
-{{ end }}
+  </body>
+</html>
